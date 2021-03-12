@@ -1,0 +1,18 @@
+// 基础路径
+//载入适应的图片
+@mixin bg-img($url) {
+  background: url($url + '@2x.png') no-repeat center/cover;
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    background: url($url + '@3x.png') no-repeat center/cover;
+  }
+}
+//载入适应的图片
+@mixin bg-svg($url) {
+  background: url($url) no-repeat center/cover;
+}
+
+.detail-content {
+  & .detail-item:last-child .border-bottom::before{
+    border-bottom: none;
+  }
+}

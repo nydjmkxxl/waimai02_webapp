@@ -1,0 +1,5 @@
+# 【忽略eslint的语法检查文件】
+/build/
+/config/
+/dist/
+/*.js
